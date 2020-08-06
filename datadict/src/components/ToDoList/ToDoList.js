@@ -1,7 +1,11 @@
 import React from 'react';
-
 import ToDo from '../ToDo/ToDo.js';
+import styled from 'styled-components'
 
+
+const mylist = styled.div`
+    margin-top: 15%;
+`;
 const ToDoList = (props) => {
     const toDoList = props.lists.map(list => {
         return (
@@ -10,7 +14,7 @@ const ToDoList = (props) => {
     })
     
     return (
-        <div className='toDoList'>
+        <div className='mylist'>
             { toDoList }
         </div>
     )
